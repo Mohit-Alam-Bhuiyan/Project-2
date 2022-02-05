@@ -88,6 +88,41 @@
 .img_cam{
     margin-right: 0px;
 }
+
+
+.head_box{
+    border: 3px solid #f1f1f1;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 150px;
+}
+
+.logo_part li{
+    
+    display: inline-block;
+    padding:30px;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+
+.logo_part img{
+    height: 30px;
+}
+
+/*----------------------------------
+    product collection part start
+ --- ------------------------------*/
+
+   
+ /*----------------------------------
+    product collection part end
+ --- ------------------------------*/
+   
+
+
+
 /*------------------------------
       main part css end
   ------------------------------*/
+  
