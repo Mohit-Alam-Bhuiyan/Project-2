@@ -1,6 +1,16 @@
+  /*-----------------------------------
+      google fonts links srart
+  ------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
   /*------------------------------
-      navigation bar css start 
+      navigation bar css end
   ------------------------------*/
+  body{
+      margin: 0px;
+  }
 .header-sec{
      display: flex;
      justify-content: space-between;
@@ -39,6 +49,9 @@
     font-size: 30px;
 }
 
+.mar_rmv{
+    margin: none;
+}
 /*------------------------------
       navigation bar css end 
   ------------------------------*/
@@ -105,24 +118,291 @@
     margin-left: 100px;
 }
 
-
-.logo_part img{
-    height: 30px;
-}
-
 /*----------------------------------
     product collection part start
  --- ------------------------------*/
+.product_heading{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 0px;
+    color: #3A3A3A;
+    font-size: 20px;
+    font-family: Poppins;
+}
 
-   
+.product_details{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-column-gap: 80px;
+    grid-row-gap: 40px; 
+}
+
+.product{
+    width: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px #c4c3c3;
+    margin-left: 200px;
+}
+
+.product img{
+    width: 380px;
+}
+
+.product h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product h2{
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Inter;
+}
+.rating{
+    color: orange;
+}
+
+.rating span{
+    color: #5E6366;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.world{
+    color: #787885;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Inter;
+    font-style: normal;
+}
+
+
+.see{
+   margin-left: 1500px;
+   margin-top: 80px;
+   color: #0486ff;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+}
  /*----------------------------------
     product collection part end
- --- ------------------------------*/
+ ----------------------------------*/
    
 
+   /*--------------------------- 
+    join with us start css part
+  ------------------------------*/
+ .join{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 120px;
+ }
 
+ .join_img{
+     margin-left: 140px;
+ }
+
+ .feature{
+     font-size: 28px;
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: bold;
+     color: #0A0826;
+ }
+
+ .amet{
+     font-size: 19px;
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: bold;
+     color: #6C6C6C;
+ }
+
+ .join_btn{
+    width: 220px;
+    height: 60px;
+    border: none;
+    background-color: #0486ff;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px;
+ }
+
+
+ .last_spa{
+     margin-left: 120px;
+ }
+   /*--------------------------- 
+    join with us end css part
+  ------------------------------*/
+
+
+  /*---------------------
+     footer part start css 
+    ---------------------*/
+  .footer_part{
+     background-color: #0A0826;
+      height: 300px;
+      border: #0A0826;
+  }
+.footer_head{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+     margin: none;
+     border: #0A0826;
+     text-align: center;
+}
+
+.footer_head h1{
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+.copy {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: normal;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.zoom{
+  font-size: 35px;
+  margin-left: 812px;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+
+  
+}
+
+.fab{
+    color: white;
+}
+    /*---------------------
+     footer part end css 
+    ---------------------*/
 
 /*------------------------------
       main part css end
   ------------------------------*/
+
+ 
+
+  /*------------------------------
+      tab media breakpoint start
+  ------------------------------*/
+  @media only screen and (max-width: 992px) {
+    .nav_bar{
+      width: 100%;
+      display: none;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+
+    .influencer_heading, .goal{
+        width: 100%;
+    }
+
+    .start_journey{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo_part{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_cam{
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .product_details{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+
+    .join, .join_img{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        margin-right: none;
+    }
+  }
+
+  /*------------------------------
+      tab media breakpoint end
+  ------------------------------*/
+
+
+
+  /*------------------------------
+      mobile media breakpoint start
+  ------------------------------*/
+  @media only screen and (max-width: 688px) {
+    .nav_bar{
+      width: 100%;
+      display: none;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+
+    .influencer_heading, .goal{
+        width: 100%;
+    }
+
+    .start_journey{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo_part{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img_cam{
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .product_details{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+
+    .join, .join_img{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        margin-right: none;
+    }
+  }
+  /*------------------------------
+      mobile media breakpoint end
+  ------------------------------*/
+  
   
